@@ -1,0 +1,110 @@
+$primaryOrange: #f3a006;
+$lightOrange: rgb(250, 216, 179);
+$primaryRed: #cc1704db;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr:hover {
+    background-color: $lightOrange;
+  }
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: $primaryOrange;
+    color: white;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow {
+    cursor: pointer;
+    margin: 0 5px;
+  }
+}
+
+.cartIcon {
+  margin: 30px;
+  width: 10%;
+  .cart {
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: $primaryOrange;
+    font-size: 2em;
+    span {
+      padding-left: 9px;
+      padding-right: 9px;
+      -webkit-border-radius: 9px;
+      -moz-border-radius: 9px;
+      border-radius: 10px;
+      font-size: 15px;
+      background: $primaryRed;
+      color: white;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px;
+    }
+  }
+}
+
+.align-center {
+  text-align: center;
+  font-weight: bold;
+  .icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: $primaryRed;
+  }
+  .quantity-btn {
+    margin: 0 10px;
+    font-size: 15px;
+    color: $primaryRed;
+  }
+}
+
+.btn {
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background-color: $primaryOrange;
+  border: none;
+  outline: none;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.btn:hover {
+  background-color: #bd7c04;
+}
+
+.empty-cart {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: $primaryRed;
+}
