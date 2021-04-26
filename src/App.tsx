@@ -30,7 +30,6 @@ interface Cart {
 const App: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [cart, setCart] = useState<Cart[]>([]);
-  const [found, setFound] = useState(false);
 
   const fetchProducts = async () => {
     const response = await fetch('http://localhost:3001/api/products/');
